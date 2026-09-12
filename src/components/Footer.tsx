@@ -48,7 +48,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="mt-1 block text-[13px] leading-snug text-white/60 hover:text-cyan-glow transition-colors"
               >
-                Dream Immigration &amp; Education
+                Dream Immigration and Educational services
               </a>
             </div>
           </div>
