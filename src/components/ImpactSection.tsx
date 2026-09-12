@@ -15,10 +15,10 @@ function StatCard({ icon: Icon, value, suffix, label, isFirst }: (typeof STATS)[
     <div
       ref={ref as React.RefObject<HTMLDivElement>}
       className={`reveal flex min-w-0 flex-col items-center text-center px-4 sm:px-6 lg:px-8 ${
-        !isFirst ? "lg:border-l lg:border-cyan-glow/25" : ""
+        !isFirst ? "lg:border-l lg:border-royal-500/30" : ""
       }`}
     >
-      <span className="mb-3 flex h-12 w-12 items-center justify-center text-cyan-glow">
+      <span className="mb-3 flex h-12 w-12 items-center justify-center text-royal-400">
         <Icon size={24} />
       </span>
       <p className="font-display text-[32px] font-extrabold leading-none text-white sm:text-[38px]">

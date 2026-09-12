@@ -8,8 +8,8 @@ export default function Logo({ light = false }: LogoProps) {
       <svg width="34" height="34" viewBox="0 0 34 34" fill="none" className="shrink-0">
         <defs>
           <linearGradient id="logoGrad" x1="0" y1="0" x2="34" y2="34" gradientUnits="userSpaceOnUse">
-            <stop offset="0%" stopColor="#22d3ee" />
-            <stop offset="100%" stopColor="#1d4ed8" />
+            <stop offset="0%" stopColor="#F2C85B" />
+            <stop offset="100%" stopColor="#B88619" />
           </linearGradient>
         </defs>
         <rect width="34" height="34" rx="9" fill={light ? "rgba(255,255,255,0.08)" : "#071233"} />
@@ -22,7 +22,7 @@ export default function Logo({ light = false }: LogoProps) {
         <span className={`font-display font-extrabold text-[17px] tracking-tight ${light ? "text-white" : "text-navy-900"}`}>
           ANVAYA
         </span>
-        <span className={`font-display font-bold text-[10px] tracking-[0.3em] ${light ? "text-cyan-glow/90" : "text-royal-600"}`}>
+        <span className={`font-display font-bold text-[10px] tracking-[0.3em] ${light ? "text-royal-400/90" : "text-royal-600"}`}>
           GROUPS
         </span>
       </span>

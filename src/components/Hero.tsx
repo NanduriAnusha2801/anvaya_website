@@ -29,7 +29,7 @@ export default function Hero() {
         {/* below lg: the globe crop crowds out the natural dark space, so a light
             frosted panel keeps the text readable; from lg: up the source image's
             own dark left side carries it, panel-free */}
-        <div className="max-w-xl lg:max-w-2xl bg-navy-950/45 backdrop-blur-md rounded-3xl p-5 -m-5 lg:bg-transparent lg:backdrop-blur-none lg:rounded-none lg:p-0 lg:m-0">
+        <div className="max-w-xl lg:max-w-2xl bg-navy-950/45 backdrop-blur-md rounded-3xl p-5 -m-5 max-sm:bg-transparent max-sm:backdrop-blur-none max-sm:rounded-none lg:bg-transparent lg:backdrop-blur-none lg:rounded-none lg:p-0 lg:m-0">
           <p className="eyebrow-dark mb-5">
             ONE JOURNEY. THREE POSSIBILITIES.
           </p>
@@ -55,14 +55,14 @@ export default function Hero() {
             {CAPABILITIES.map(({ icon: Icon, line1, line2 }, i) => (
               <Fragment key={line1}>
                 <div className="flex items-center gap-3 shrink-0">
-                  <Icon size={28} className="text-cyan-glow shrink-0" strokeWidth={2} />
+                  <Icon size={28} className="text-royal-400 shrink-0" strokeWidth={2} />
                   <span className="text-[17px] font-semibold leading-[1.2] text-white/85">
                     <span className="block">{line1}</span>
                     <span className="block">{line2}</span>
                   </span>
                 </div>
                 {i < CAPABILITIES.length - 1 && (
-                  <span className="hidden sm:block w-px h-10 bg-cyan-glow/25 shrink-0" aria-hidden="true" />
+                  <span className="hidden sm:block w-px h-10 bg-royal-500/30 shrink-0" aria-hidden="true" />
                 )}
               </Fragment>
             ))}

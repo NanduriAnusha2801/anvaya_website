@@ -5,28 +5,21 @@
   --font-display: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-hand: "Caveat", cursive;
 
-  /* Deep navy / dark blue */
-  --color-navy-950: #050b1f;
-  --color-navy-900: #071233;
-  --color-navy-800: #0a1a45;
-  --color-navy-700: #0e2258;
-
-  /* Royal / electric blue */
-  --color-royal-600: #1d4ed8;
-  --color-royal-500: #2563eb;
-  --color-royal-400: #3b82f6;
-
-  /* Cyan / electric accent */
-  --color-cyan-glow: #22d3ee;
-  --color-cyan-bright: #38e1f2;
-
-  /* Light blues */
-  --color-ice-50: #f4f9ff;
-  --color-ice-100: #e8f3ff;
-  --color-ice-200: #d6ebff;
-
-  --shadow-glow-cyan: 0 0 40px rgba(34, 211, 238, 0.35);
-  --shadow-card: 0 10px 40px -12px rgba(10, 26, 69, 0.18);
+  /* Black, charcoal, gold, and warm ivory brand palette */
+  --color-navy-950: #050505;
+  --color-navy-900: #111111;
+  --color-navy-800: #181818;
+  --color-navy-700: #242424;
+  --color-royal-600: #b88619;
+  --color-royal-500: #d4a72c;
+  --color-royal-400: #f2c85b;
+  --color-cyan-glow: #d4a72c;
+  --color-cyan-bright: #f2c85b;
+  --color-ice-50: #faf8f2;
+  --color-ice-100: #f4efe3;
+  --color-ice-200: #e9dfca;
+  --shadow-glow-cyan: 0 0 40px rgba(212, 167, 44, 0.24);
+  --shadow-card: 0 10px 40px -12px rgba(17, 17, 17, 0.18);
 }
 
 html {
@@ -35,7 +28,7 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background-color: #ffffff;
+  background-color: #faf8f2;
   color: var(--color-navy-900);
   -webkit-font-smoothing: antialiased;
 }
@@ -127,7 +120,7 @@ h1, h2, h3, h4 {
 
   .text-gradient-cyan {
     background-color: transparent;
-    background-image: linear-gradient(90deg, #67e8f9 0%, #38bdf8 50%, #60a5fa 100%);
+    background-image: linear-gradient(90deg, #f2c85b 0%, #d4a72c 50%, #b88619 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -136,7 +129,7 @@ h1, h2, h3, h4 {
 
   .text-gradient-premium {
     background-color: transparent;
-    background-image: linear-gradient(90deg, #67e8f9 0%, #38bdf8 50%, #60a5fa 100%);
+    background-image: linear-gradient(90deg, #f2c85b 0%, #d4a72c 50%, #b88619 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -145,7 +138,7 @@ h1, h2, h3, h4 {
 
   .text-gradient-navy {
     background-color: transparent;
-    background-image: linear-gradient(90deg, #06245a 0%, #0b5ed7 100%);
+    background-image: linear-gradient(90deg, #111111 0%, #b88619 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -163,12 +156,12 @@ h1, h2, h3, h4 {
 
   .eyebrow-light {
     background-color: transparent;
-    background-image: linear-gradient(90deg, #06245a 0%, #0b5ed7 100%);
+    background-image: linear-gradient(90deg, #111111 0%, #b88619 100%);
   }
 
   .eyebrow-dark {
     background-color: transparent;
-    background-image: linear-gradient(90deg, #67e8f9 0%, #38bdf8 50%, #60a5fa 100%);
+    background-image: linear-gradient(90deg, #f2c85b 0%, #d4a72c 50%, #b88619 100%);
   }
 
   .section-title {
@@ -190,12 +183,12 @@ h1, h2, h3, h4 {
 
   .section-subtitle-light {
     background-color: transparent;
-    background-image: linear-gradient(90deg, #06245a 0%, #0b5ed7 100%);
+    background-image: linear-gradient(90deg, #111111 0%, #b88619 100%);
   }
 
   .section-subtitle-dark {
     background-color: transparent;
-    background-image: linear-gradient(90deg, #67e8f9 0%, #38bdf8 50%, #60a5fa 100%);
+    background-image: linear-gradient(90deg, #f2c85b 0%, #d4a72c 50%, #b88619 100%);
   }
 
   .body-copy-light {
@@ -238,5 +231,58 @@ h1, h2, h3, h4 {
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-14px); }
+}
+
+@media (max-width: 639px) {
+  .education-mobile-destinations {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overscroll-behavior-x: contain;
+    touch-action: pan-x;
+  }
+
+  .education-mobile-destinations::-webkit-scrollbar {
+    display: none;
+  }
+
+  .education-mobile-destinations-track {
+    animation: education-destinations-marquee 36s linear infinite;
+    animation-iteration-count: infinite;
+    will-change: transform;
+  }
+
+  .education-mobile-destinations.is-paused .education-mobile-destinations-track {
+    animation-play-state: paused;
+  }
+
+  .education-mobile-bg {
+    background-image: url("/edu_img.png");
+    background-size: cover;
+    background-position: center;
+    background-color: #111111;
+  }
+
+  .education-mobile-overlay {
+    background: linear-gradient(90deg, rgba(5, 5, 5, 0.68), rgba(5, 5, 5, 0.32));
+  }
+
+  .education-mobile-content .section-title {
+    color: #faf8f2;
+  }
+
+  .education-mobile-content .section-subtitle-light {
+    background-image: linear-gradient(90deg, #f2c85b 0%, #d4a72c 50%, #b88619 100%);
+  }
+
+  .education-mobile-content .body-copy-light,
+  .education-mobile-content .text-navy-900\/40,
+  .education-mobile-content .text-navy-900\/75 {
+    color: #faf8f2;
+  }
+}
+
+@keyframes education-destinations-marquee {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
 }
 

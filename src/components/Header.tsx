@@ -56,7 +56,7 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/95 backdrop-blur-md shadow-[0_4px_24px_-8px_rgba(10,26,69,0.12)]" : "bg-white"
+        scrolled ? "bg-[#FAF8F2]/95 backdrop-blur-md shadow-[0_4px_24px_-8px_rgba(17,17,17,0.16)]" : "bg-[#FAF8F2]"
       }`}
     >
       <div className="mx-auto max-w-[1240px] px-5 sm:px-8 h-[76px] grid grid-cols-[auto_1fr_auto] items-center gap-4">
@@ -111,7 +111,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       <div
-        className={`lg:hidden overflow-hidden transition-all duration-300 bg-white border-t border-navy-900/5 ${
+        className={`lg:hidden overflow-hidden transition-all duration-300 bg-ice-50 border-t border-navy-900/5 ${
           menuOpen ? "max-h-[420px]" : "max-h-0"
         }`}
       >

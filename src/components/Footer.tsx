@@ -39,14 +39,14 @@ export default function Footer() {
               Connecting Ideas.<br/> Creating Opportunities.
             </p>
             <div className="mt-5">
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-cyan-glow/70">
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-royal-400/80">
                 Associated With
               </p>
               <a
                 href="https://www.dreamimmigrationsandeducation.in/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-1 block text-[13px] leading-snug text-white/60 hover:text-cyan-glow transition-colors"
+                className="mt-1 block text-[13px] leading-snug text-white/60 hover:text-royal-400 transition-colors"
               >
                 Dream Immigration and Educational services
               </a>
@@ -61,7 +61,7 @@ export default function Footer() {
                   <a
                     href={link.href}
                     onClick={handleNavClick(link.href)}
-                    className="text-[13.5px] text-white/50 hover:text-cyan-glow transition-colors"
+                    className="text-[13.5px] text-white/50 hover:text-royal-400 transition-colors"
                   >
                     {link.label}
                   </a>
@@ -78,7 +78,7 @@ export default function Footer() {
                   <a
                     href={link.href}
                     onClick={handleNavClick(link.href)}
-                    className="text-[13.5px] text-white/50 hover:text-cyan-glow transition-colors"
+                    className="text-[13.5px] text-white/50 hover:text-royal-400 transition-colors"
                   >
                     {link.label}
                   </a>
@@ -91,19 +91,19 @@ export default function Footer() {
             <h4 className="mb-4 text-[13px] font-bold tracking-wider text-white/85">Contact Us</h4>
             <ul className="space-y-3">
               <li className="flex items-center gap-2.5 text-[13.5px] text-white/50">
-                <Phone size={14} className="text-cyan-glow shrink-0" />
-                <a href="tel:+919177300297" className="hover:text-cyan-glow transition-colors">
+                <Phone size={14} className="text-royal-400 shrink-0" />
+                <a href="tel:+919177300297" className="hover:text-royal-400 transition-colors">
                   +91 91773 00297
                 </a>
               </li>
               <li className="flex items-center gap-2.5 text-[13.5px] text-white/50">
-                <Mail size={14} className="text-cyan-glow shrink-0" />
-                <a href="mailto:info@anvayagroups.com" className="hover:text-cyan-glow transition-colors">
+                <Mail size={14} className="text-royal-400 shrink-0" />
+                <a href="mailto:info@anvayagroups.com" className="hover:text-royal-400 transition-colors">
                   info@anvayagroups.com
                 </a>
               </li>
               <li className="flex items-center gap-2.5 text-[13.5px] text-white/50">
-                <MapPin size={14} className="text-cyan-glow shrink-0" />
+                <MapPin size={14} className="text-royal-400 shrink-0" />
                 India | Global
               </li>
             </ul>
@@ -122,7 +122,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={label}
-                className="flex items-center justify-center p-1 text-white/55 hover:text-cyan-glow transition-colors duration-300"
+                className="flex items-center justify-center p-1 text-white/55 hover:text-royal-400 transition-colors duration-300"
               >
                 <Icon size={15} />
               </a>

@@ -18,7 +18,7 @@ export default function TechnologySection() {
       />
 
       <div ref={ref} className="relative mx-auto max-w-[1240px] px-5 sm:px-8 w-full">
-        <div className="reveal max-w-xl lg:max-w-[640px] bg-navy-950/40 backdrop-blur-md rounded-3xl p-5 -m-5 lg:bg-transparent lg:backdrop-blur-none lg:rounded-none lg:p-0 lg:m-0">
+        <div className="reveal max-w-xl lg:max-w-[640px] bg-navy-950/40 backdrop-blur-md rounded-3xl p-5 -m-5 max-sm:bg-transparent max-sm:backdrop-blur-none max-sm:rounded-none lg:bg-transparent lg:backdrop-blur-none lg:rounded-none lg:p-0 lg:m-0">
           <h2 className="section-title-dark mb-4">
             TECHNOLOGY SOLUTIONS
           </h2>

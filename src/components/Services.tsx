@@ -23,9 +23,9 @@ const CARDS: ServiceCard[] = [
   {
     number: "01",
     icon: Code2,
-    iconBg: "bg-gradient-to-br from-[#061B49] to-[#0B3D91]",
+    iconBg: "bg-gradient-to-br from-[#111111] to-[#242424]",
     numberColor: "text-cyan-glow",
-    cardBg: "bg-gradient-to-b from-royal-500/[0.07] via-cyan-glow/[0.05] to-white",
+    cardBg: "bg-gradient-to-b from-royal-500/[0.10] via-ice-100/[0.35] to-ice-50",
     title: "Digital &\nTechnology Solutions",
     description: "Turn your ideas into powerful digital products.",
     items: [
@@ -44,9 +44,9 @@ const CARDS: ServiceCard[] = [
   {
     number: "02",
     icon: GraduationCap,
-    iconBg: "bg-gradient-to-br from-[#061B49] to-[#0B3D91]",
+    iconBg: "bg-gradient-to-br from-[#111111] to-[#242424]",
     numberColor: "text-royal-600",
-    cardBg: "bg-gradient-to-b from-royal-500/[0.07] via-cyan-glow/[0.05] to-white",
+    cardBg: "bg-gradient-to-b from-royal-500/[0.10] via-ice-100/[0.35] to-ice-50",
     title: "Education &\nAdmissions",
     description: "Your future. Our guidance.",
     items: [
@@ -61,9 +61,9 @@ const CARDS: ServiceCard[] = [
   {
     number: "03",
     icon: Globe2,
-    iconBg: "bg-gradient-to-br from-[#061B49] to-[#0B3D91]",
+    iconBg: "bg-gradient-to-br from-[#111111] to-[#242424]",
     numberColor: "text-royal-600",
-    cardBg: "bg-gradient-to-b from-royal-500/[0.07] via-cyan-glow/[0.05] to-white",
+    cardBg: "bg-gradient-to-b from-royal-500/[0.10] via-ice-100/[0.35] to-ice-50",
     title: "Visa Assistance",
     description: "Explore the world. Without limits.",
     items: [
@@ -106,7 +106,7 @@ export default function Services() {
             return (
               <div
                 key={card.title}
-                className={`reveal group relative flex flex-col rounded-[26px] ${card.cardBg} border border-navy-900/[0.06] shadow-[0_10px_40px_-16px_rgba(10,26,69,0.15)] p-7 hover:-translate-y-1.5 hover:shadow-[0_22px_50px_-16px_rgba(10,26,69,0.22)] transition-all duration-500`}
+                className={`reveal group relative flex flex-col rounded-[26px] ${card.cardBg} border border-navy-900/[0.10] shadow-[0_10px_40px_-16px_rgba(17,17,17,0.15)] p-7 hover:-translate-y-1.5 hover:shadow-[0_22px_50px_-16px_rgba(212,167,44,0.18)] transition-all duration-500`}
                 style={{ transitionDelay: `${i * 90}ms` }}
               >
                 <div className="flex items-start justify-between">
