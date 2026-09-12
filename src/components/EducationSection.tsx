@@ -70,8 +70,8 @@ export default function EducationSection() {
         ref={ref}
         className="education-mobile-content relative mx-auto grid max-w-[1240px] items-center gap-10 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[minmax(0,1fr)_auto_140px] lg:gap-6 lg:py-24 lg:pl-[44%] lg:pr-0"
       >
-        <div className="reveal" style={{ transitionDelay: "100ms" }}>
-          <h2 className="section-title mb-4">
+        <div className="reveal max-sm:min-w-0" style={{ transitionDelay: "100ms" }}>
+          <h2 className="education-mobile-heading section-title mb-4 max-sm:max-w-full max-sm:text-[30px] max-sm:break-words">
             EDUCATION &amp; ADMISSIONS
           </h2>
           <p className="section-subtitle-light">

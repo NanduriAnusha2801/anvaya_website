@@ -234,6 +234,27 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 639px) {
+  .education-mobile-content {
+    min-width: 0;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  .education-mobile-content > div {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .education-mobile-heading {
+    max-width: 100%;
+    font-size: 28px;
+    line-height: 1.1;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
   .education-mobile-destinations {
     scrollbar-width: none;
     -ms-overflow-style: none;
