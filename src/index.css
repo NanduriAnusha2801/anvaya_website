@@ -233,6 +233,20 @@ h1, h2, h3, h4 {
     opacity: 1;
     transform: translateY(0);
   }
+
+  .education-visual::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(90deg, transparent 70%, rgba(255, 255, 255, 0.92) 100%);
+  }
+
+  @media (max-width: 1023px) {
+    .education-visual::after {
+      background: linear-gradient(180deg, transparent 68%, rgba(255, 255, 255, 0.96) 100%);
+    }
+  }
 }
 
 @keyframes float {

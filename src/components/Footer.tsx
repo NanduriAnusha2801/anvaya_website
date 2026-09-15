@@ -98,8 +98,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5 text-[13.5px] text-white/50">
                 <Mail size={14} className="text-cyan-glow shrink-0" />
-                <a href="mailto:info@anvayagroups.com" className="hover:text-cyan-glow transition-colors">
-                  info@anvayagroups.com
+                <a href="mailto:info.anvayagroups@gmail.com" className="hover:text-cyan-glow transition-colors">
+                  info.anvayagroups@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-2.5 text-[13.5px] text-white/50">
